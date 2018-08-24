@@ -2,6 +2,21 @@
   <div>
     <header class="home header">
       <div class="picture">
+          <img :src="person.fields.image.fields.file.url + '?w=1200'">
+        </div>
+        <div class="foreground">
+          <div class="page-bar wrapper">
+            <a href="/" class="person-name">{{ person.fields.name }}</a>
+            <Navigation></Navigation>
+          </div>
+          <div class="page-info wrapper">
+            <h2>{{ person.fields.title }}</h2>
+            <p>{{ person.fields.shortBio }}</p>
+            <ul class="social-icons">
+            </ul>
+          </div>
+        </div>
+    <!--  <div class="picture">
         <img :src="person.fields.image.fields.file.url + '?w=1200'">
       </div>
       <div class="foreground">
@@ -30,12 +45,12 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div>-->
     </header>
 
     <section class="body-container">
       <div class="items-bar wrapper">
-        <h2>Recent articles</h2>
+        <h2>おおたまを学ぶコンテンツ</h2>
       </div>
       <ul class="items-list wrapper">
         <li class="item" v-for="post in posts">
@@ -85,8 +100,8 @@ export default {
   position: relative;
   height: 70vw;
   min-height: 400px;
-  max-height: 610px;
-  background: #000;
+  max-height: 400px;
+  background: #444;
   color: #fff;
 }
 

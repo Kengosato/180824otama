@@ -1,4 +1,8 @@
 # blog-in-5-min
+>SPACE-ID 86y5miccncfm
+>Content Delivery API - access token  4584ef750c4c80c56a8cf9025f8f08634551150033900396c10bd0c82166206d
+>Personal Access Tokens  (otama)
+>CFPAT-883be2227853c17062926ba4fb7ee64396dfc47c1b7a2dd27759c95328995e0b
 
 > A statically rendered blog based on Contentful
 
@@ -32,4 +36,3 @@ Nuxt.js is based on [Vue.js](https://vuejs.org/). Vue is a fairly new JS framewo
 - static file generation for production
 
 For detailed explanation on how things work, check out the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
