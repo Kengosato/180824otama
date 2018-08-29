@@ -3,18 +3,17 @@
     <header class="blog header">
       <div class="foreground">
         <div class="page-bar wrapper">
-          <a href="/" class="person-name">John Doe</a>
+          <a href="/" class="person-name">おおたまを学ぶ</a>
           <Navigation></Navigation>
         </div>
         <div class="page-info wrapper">
-          <h2>Blog</h2>
         </div>
       </div>
     </header>
 
     <section class="body-container">
       <div class="items-bar wrapper">
-        <h2>All articles ({{ posts.length }})</h2>
+        <h2>すべてのコンテンツの一覧 ({{ posts.length }})</h2>
       </div>
       <ul class="items-list wrapper">
         <li class="item" v-for="post in posts">

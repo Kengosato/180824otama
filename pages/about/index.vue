@@ -1,27 +1,25 @@
 <template>
   <div>
-    <header class="tag-page header">
+    <header class="blog header">
       <div class="foreground">
         <div class="page-bar wrapper">
           <a href="/" class="person-name">おおたまを学ぶ</a>
           <Navigation></Navigation>
         </div>
         <div class="page-info wrapper">
+          <h2>About</h2>
         </div>
       </div>
     </header>
 
     <section class="body-container">
       <div class="items-bar wrapper">
-        <!--<h2>{{ tag }} ({{ posts.length }})</h2>-->
-        <h2>{{ tag }}</h2>
+        <h2>おおたまをまなぶとは？？</h2>
       </div>
       <ul class="items-list wrapper">
-        <li class="item" v-for="post in posts">
-          <article-preview :post="post"></article-preview>
-        </li>
       </ul>
     </section>
+
   </div>
 </template>
 
@@ -36,12 +34,10 @@ export default {
   asyncData ({ env, params }) {
     return client.getEntries({
       'content_type': env.CTF_BLOG_POST_TYPE_ID,
-      'fields.tags[in]': params.tag,
       order: '-sys.createdAt'
     }).then(entries => {
       return {
-        posts: entries.items,
-        tag: params.tag
+        posts: entries.items
       }
     })
   },

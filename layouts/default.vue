@@ -37,7 +37,7 @@
 
   .wrapper {
     padding: 2em 0;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
   }
 
@@ -81,6 +81,7 @@
     padding: 1em 3em 1em 0;
   }
 
+/*アイテムを画面の大きさごとに並びルールを設定する*/
   @media all and (min-width: 600px) {
     .item {
       float: left;
@@ -91,6 +92,7 @@
   @media all and (min-width: 900px) {
     .item {
       width: 33.333%;
+
     }
   }
 

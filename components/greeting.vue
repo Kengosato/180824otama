@@ -3,10 +3,6 @@
   <!-- Greeting section -->
   <section class="greeting">
     <div class="message wrapper">
-      <p>
-        There you go! You just set up a Contentful account and a custom app. Now go ahead and <a href="https://app.contentful.com/" target="_blank">try the Web App</a> or head over to the <a href="http://contentful.com/developers/docs" target="_blank">Documentation</a> to learn more about building with Contentful. If you want to remove this message, delete line <code>3</code> in <code>layouts/default.vue</code>.
-      </p>
-      <a href="https://app.contentful.com/" target="_blank" class="cta">Try the Web App</a>
     </div>
   </section>
 </template>

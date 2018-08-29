@@ -1,20 +1,13 @@
 <template>
   <article>
+    <nuxt-link :to="{ name: 'tags-tag', params: { tag: post.fields.slug }}" class="title">
     <img class="thumbnail"
       :src="post.fields.heroImage.fields.file.url + '?fit=scale&w=350&h=196'"
       :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=196&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=562&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=1125&fit=fill 2000w`"
       sizes="(min-width: 1024px) 400px, 100vw"
     >
-    <time class="tiny date">{{ ( new Date(post.fields.publishDate)).toDateString() }}</time>
-    <h4><nuxt-link :to="{ name: 'blog-slug', params: { slug: post.fields.slug }}" class="title">{{ post.fields.title }}</nuxt-link></h4>
-    <p>{{ post.fields.description }}</p>
-
-    <div class="tags">
-      <nuxt-link
-        v-for="tag in post.fields.tags"
-        :key="tag"
-        :to="{ name: 'tags-tag', params: { tag: tag }}" class="tag">{{ tag }}</nuxt-link>
-    </div>
+  </nuxt-link>
+    <h4><nuxt-link :to="{ name: 'tags-tag', params: { tag: post.fields.slug }}" class="title">{{ post.fields.title }}</nuxt-link></h4>
   </article>
 </template>
 
@@ -62,4 +55,28 @@ export default {
     color: #606060;
     border-color: #606060;
   }
+  .categories {
+    padding : 1em 1em;
+    margin-bottom: 2em;
+  }
+
+  .category:link,
+  .tagcategory:visited {
+    color: #A0A0A0;
+    text-decoration: none;
+    display: inline-block;
+    padding: .33333rem .5rem;
+    line-height: 1;
+    border-radius: 2px;
+    border: 1px solid #A0A0A0;
+    margin-right: .5em;
+  }
+
+  .category:active,
+  .category:hover,
+  .category:focus {
+    color: #606060;
+    border-color: #606060;
+  }
+
 </style>

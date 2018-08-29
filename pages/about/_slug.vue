@@ -3,7 +3,7 @@
     <header class="article header">
       <div class="foreground">
         <div class="page-bar wrapper">
-          <a href="/" class="person-name">John Doe</a>
+          <a href="/" class="person-name">おおたまを学ぶ</a>
           <Navigation></Navigation>
         </div>
       </div>
@@ -13,7 +13,7 @@
           :srcset="`${post.fields.heroImage.fields.file.url}?w=350&h=87&fit=fill 350w, ${post.fields.heroImage.fields.file.url}?w=1000&h=250&fit=fill 1000w, ${post.fields.heroImage.fields.file.url}?w=2000&h=500&fit=fill 2000w`"
           size="100vw"
           :alt="post.fields.heroImage.fields.description"
-        >
+        ><!--最初のタイトル画像-->
       </div>
     </header>
 
@@ -28,6 +28,14 @@
         </div>
       </main>
     </section>
+    <footer class="article footer">
+      <div class="foreground">
+        <div class="page-bar wrapper">
+          <Navigation></Navigation>
+
+        </div>
+      </div>
+    </footer>
 
   </div>
 </template>
