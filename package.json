@@ -8,6 +8,7 @@
     "@nuxtjs/bulma": "^1.2.0",
     "@nuxtjs/font-awesome": "^1.0.3",
     "contentful": "^4.3.0",
+    "contentful-export": "^7.3.0",
     "contentful-management": "^3.4.0",
     "nuxt": "^1.0.0-rc4",
     "vue-markdown": "^2.1.3"

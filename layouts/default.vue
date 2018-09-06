@@ -7,11 +7,9 @@
 </template>
 
 <script>
-  import Greeting from '~/components/greeting.vue'
 
   export default {
     components: {
-      Greeting
     }
   }
 </script>
@@ -78,7 +76,7 @@
   }
 
   .item {
-    padding: 1em 3em 1em 0;
+    padding: 1em 3em 1em 1em;
   }
 
 /*アイテムを画面の大きさごとに並びルールを設定する*/
@@ -92,6 +90,7 @@
   @media all and (min-width: 900px) {
     .item {
       width: 33.333%;
+      float: left;
 
     }
   }

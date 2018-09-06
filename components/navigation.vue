@@ -6,7 +6,7 @@
         <div class="button is-info is-8">
         <nuxt-link :to="{ name: route.name }">{{ route.name.charAt(0).toUpperCase() + route.name.slice(1) }}</nuxt-link>
         </div>
-        
+
       </li>
 </div>
     </ul>
@@ -37,6 +37,7 @@
   .menu li {
     display: inline-block;
     margin-left: 1em;
+    margin-bottom: 1em;
   }
 
   .menu a:link,
